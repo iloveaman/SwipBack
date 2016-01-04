@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <!--app:navigationIcon="?attr/homeAsUpIndicator"
+    android:layout_height="?attr/actionBarSize"
+    app:navigationIcon="@drawable/icon_back_2"-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/toolbar_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_gravity="left"
+            android:background="@drawable/toolbar_selector"
+            android:descendantFocusability="blocksDescendants"
+            android:minWidth="@dimen/titlebar_height"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@id/toolbar_left_button_icon"
+                android:layout_width="@dimen/titlebar_height"
+                android:layout_height="@dimen/titlebar_height"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@null" />
+
+            <TextView
+                android:id="@id/toolbar_left_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/titlebar_height"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:clickable="false"
+                android:gravity="center"
+                android:minWidth="@dimen/titlebar_height"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <!--  android:src="@drawable/ic_crop_white_24dp"-->
+        <ImageButton
+            android:id="@id/toolbar_right_button_icon"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_gravity="right"
+            android:background="@drawable/toolbar_selector"
+            android:src="@null" />
+
+        <TextView
+            android:id="@id/toolbar_right_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_gravity="right"
+            android:background="@drawable/toolbar_selector"
+            android:gravity="center"
+            android:minWidth="@dimen/titlebar_height"
+            android:text="" />
+    </android.support.v7.widget.Toolbar>
+
+</FrameLayout>

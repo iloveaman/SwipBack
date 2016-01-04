@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SwipeBack</string>
+
+    <string name="button1">LEFT</string>
+    <string name="button2">TOP</string>
+    <string name="button3">RIGHT</string>
+    <string name="button4">BOTTOM</string>
+    <string name="button5">button5</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_2">Activity2</string>
+
+    <string name="hello_world">Java是由Sun Microsystems公司推出的Java面向对象程序设计语言（以下简称Java语言）和Java平台的总称。由James Gosling和同事们共同研发，并在1995年正式推出。Java最初被称为Oak，是1991年为消费类电子产品的嵌入式芯片而设计的。1995年更名为Java，并重新设计用于开发Internet应用程序。用Java实现的HotJava浏览器（支持Java applet）显示了Java的魅力：跨平台、动态Web、Internet计算。从此，Java被广泛接受并推动了Web的迅速发展，常用的浏览器均支持Javaapplet。另一方面，Java技术也不断更新。Java自面世后就非常流行，发展迅速，对C++语言形成有力冲击。在全球云计算和移动互联网的产业环境下，Java更具备了显著优势和广阔前景。2010年Oracle公司收购Sun Microsystems。</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--toolbar-->
+    <item name="toolbar" type="id" />
+    <item name="menu_crop" type="id" />
+    <item name="tag_item" type="id" />
+
+
+    <item name="toolbar_title" type="id" />
+    <item name="toolbar_right_button_icon" type="id" />
+    <item name="toolbar_right_button_text" type="id" />
+    <item name="toolbar_left_button" type="id" />
+    <item name="toolbar_left_button_icon" type="id" />
+    <item name="toolbar_left_button_text" type="id" />
+
+</resources>
