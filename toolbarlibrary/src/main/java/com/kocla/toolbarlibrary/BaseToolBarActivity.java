@@ -72,31 +72,13 @@ public abstract class BaseToolBarActivity extends BaseActivity {
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         swipeBackLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));//整個view的背景色
         swipeBackLayout.addView(view, params);
-//        final View statusBarTintView = mTintManager.getStatusBarTintView();
-//        swipeBackLayout.setOnSwipeBackListener(new SwipeBackLayout.SwipeBackListener() {
-//            @Override
-//            public void onViewPositionChanged(float fractionAnchor, float fractionScreen) {
-//
-//            }
-//
-//            @Override
-//            public void smoothScrollToX(int finalLeft) {
-//                Log.i("smoothScrollToX", finalLeft + "");
-//                statusBarTintView.scrollBy(finalLeft, (int) statusBarTintView.getTranslationY());
-//            }
-//
-//            @Override
-//            public void smoothScrollToY(int finalTop) {
-//            }
-//        });
         //
         setContentView(swipeBackLayout);
-
 
         //setContentView(view);
         /*把 toolbar 设置到Activity 中*/
         //setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);//设置右侧的菜单栏按钮是否显示
+        //toolbar.setDisplayHomeAsUpEnabled(true);//设置右侧的菜单栏按钮是否显示
         toolbar.setNavigationIcon(null); //Navigation Icon 要設定在 setSupoortActionBar 才有作用
         /*自定义的一些操作*/
         onCreateCustomToolBar(toolbar);
