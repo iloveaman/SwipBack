@@ -65,7 +65,6 @@ public abstract class BaseToolBarActivity extends BaseActivity {
         mToolBarHelper = new ToolBarHelper(this, layoutResID);
         toolbar = mToolBarHelper.getToolBar();
         view = mToolBarHelper.getContentView();
-
         //
         SwipeBackLayout swipeBackLayout = new SwipeBackLayout(this);
         setSwipeBackLayout(swipeBackLayout);
@@ -73,8 +72,17 @@ public abstract class BaseToolBarActivity extends BaseActivity {
         swipeBackLayout.setBackgroundColor(getResources().getColor(android.R.color.transparent));//整個view的背景色
         swipeBackLayout.addView(view, params);
         //
+        //可以在滑动的时候显示阴影：
+//        RelativeLayout container = new RelativeLayout(this);
+//        //swipeBackLayout.setOnSwipeBackListener(this);
+//        ivShadow = new ImageView(this);
+//        ivShadow.setBackgroundColor(getResources().getColor(R.color.black_p50));
+//        RelativeLayout.LayoutParams params2 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+//        container.addView(ivShadow, params2);
+//        container.addView(swipeBackLayout,params2);
+//        setContentView(container);
+        //
         setContentView(swipeBackLayout);
-
         //setContentView(view);
         /*把 toolbar 设置到Activity 中*/
         //setSupportActionBar(toolbar);

@@ -9,4 +9,5 @@
 
 
     <color name="green">#94c447</color>
+    <color name="black_p50">#50000000</color>
 </resources>
